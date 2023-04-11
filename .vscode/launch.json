@@ -1,0 +1,21 @@
+// create launch file for TypeScript using ts-node
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NestJS",
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "src/server_nestjs.ts"
+      ],
+      "runtimeArgs": [
+        "--require",
+        "ts-node/register"
+      ],
+      "outputCapture": "std",
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}
